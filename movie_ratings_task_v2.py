@@ -1,4 +1,4 @@
-def movie_rating(age: int):
+def movie_rating(age):
     if age < 1 or age > 117:
         print("Please enter an age between 1 and 117")
     elif 1 <= age < 8:
