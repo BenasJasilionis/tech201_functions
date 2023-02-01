@@ -32,10 +32,10 @@
 #     print(f"Hello, my name is {name}")
 #
 # greetings("Benas")
-# greetings("Flo")
+# greetings("Josh")
 # greetings("Luke")
-# greetings("Belal")
-# greetings("Bakar")
+# greetings("Jake")
+# greetings("Jordan")
 
 # The Return statement - without return python doesn't hold the value
 
