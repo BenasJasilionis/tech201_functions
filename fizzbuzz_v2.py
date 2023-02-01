@@ -12,3 +12,4 @@ def fizzbuzz(num: int):
 
 for number in range(1, 101):
     fizzbuzz(number)
+
