@@ -79,7 +79,7 @@ def multi_args(*multiargs):
     for arg in multiargs:
         print(arg)
 
-# multi_args(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) # Output = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+multi_args(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) # Output = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 ````
 * As can be seen, using the `*` to allow for multiple `arguments` causes the function to create a `tuple`
 * The `for` loop is there simply to highlight that multiple `arguments` have been passed, this can be seen in the output
