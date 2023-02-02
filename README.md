@@ -95,7 +95,7 @@ greeting(24601)
 * For example, if we have a function which greets someone with their name, we want the user to input a `string` as an argument.
 * By using the `: str`, when we go to call `greeting()`, the program will highlight our `argument` if it is of an inappropriate datatype as is the case in the example
 
-# Type hints - outputs
+### Type hints - outputs
 We can also tell the function what sort of output we want from function, to make sure that the `arguments` which we pass can give that output. This is done by having a ` -> "datatype":` after the `parameters`
 ````python
 def division(num1: int = 5, num2: int = 2) -> float:
