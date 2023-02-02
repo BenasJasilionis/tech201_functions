@@ -101,6 +101,59 @@ We can also tell the function what sort of output we want from function, to make
 def division(num1: int = 5, num2: int = 2) -> float:
     return num1 / num2
 
-print(division())
+print(division()) # Output = 2.5
+````
+* In the above example, the output will be `2.5`, however any combination of numbers could be used and the output would still be presented in the `float` type.
+
+### Functions best practice
+1) Name your functions clearly using lower case and underscores
+2) All arguments should be clear in their need and where possible include their expected type
+3) Remember the return statement or functions will return None 
+4) Keep functions small where feasable - for readability and simplicity 
+5) Use comments in your functions/methods to give instructions on how to use them 
+6) Consider using type hints to avoid type errors when you run your code
+
+# Making a simple calculator
+1) Define the functions for the 4 operations: -, +, *, /:
+````python
+# Adding
+def adding(x, y) -> float:
+    return x + y
+
+# Subtracting
+def subtracting(x, y) -> float:
+    return x - y
+
+# Dividing
+def dividing(x, y) -> float:
+    return x / y
+
+# Multiplying
+def multiplying(x, y) -> float:
+    return x * y
+````
+2) Define a variable which will store the users chosen operation:
+````python
+# Selecting an operation
+operation = int(input("Please choose an operation using the following key: 1= Add, 2= Subtract, 3= Divide, 4= Multiply :"))
+````
+3) Create an `if` block to allow the user to choose 2 numbers for the operation:
+````python
+if operation != 0:
+    num1 = float(input("Choose your first number:"))
+    num2 = float(input("Choose your second number:"))
+````
+4) Create an `if` block which will call the various functions based on the users input:
+````python
+if operation == 1:
+    print(adding(num1, num2))
+elif operation == 2:
+    print(subtracting(num1, num2))
+elif operation == 3:
+    print(dividing(num1, num2))
+elif operation == 4:
+    print(multiplying(num1, num2))
+````
+
 
 
